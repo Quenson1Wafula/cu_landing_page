@@ -15,7 +15,7 @@ body {
 .humbuger-btn {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 /* ====== */
 
@@ -35,7 +35,7 @@ body {
 
 .humbuger-btn span {
   width: 2.5rem;
-  border: 2px solid #000;
+  border: 1px solid var(---secondary-color);
   border-radius: 4rem;
   transition: 0.4s;
 }
@@ -49,3 +49,11 @@ body {
 .church-logo{
     width: 23%;
   }
+
+.plasmic-tab {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid #000;
+    text-align: center;
+}
