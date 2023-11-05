@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* header nav section */
+
+.humbuger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* width: 100%; */
+
+}
+/* ====== */
+
+  .humbuger-btn.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-10px, 6px);
+  }
+  
+  .humbuger-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .humbuger-btn.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-10px, -6px);
+  }
+  
+  /* =========== */
+
+.humbuger-btn span {
+  width: 2.5rem;
+  border: 2px solid #000;
+  border-radius: 4rem;
+  transition: 0.4s;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  gap: 1rem;
+}
+.church-logo{
+    width: 15%;
+  }
