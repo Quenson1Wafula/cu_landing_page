@@ -119,6 +119,7 @@ nav {
 
 .active-link {
   color: var(--active-link);
+  border-bottom: 2px solid var(--active-link);
 }
 
 .plasmic-tab-dis li {
