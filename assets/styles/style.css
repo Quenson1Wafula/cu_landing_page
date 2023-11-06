@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 /* header nav section */
@@ -91,6 +91,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 nav {
@@ -98,6 +99,7 @@ nav {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
+/* disappearing-nav */
 .show-nav {
   display: block;
 }
@@ -153,5 +155,28 @@ nav {
     height: 4rem;
     background-color: var(--tw-bg-opacity);
     border-radius: 9999px;
+}
 
+.disp-menu-2 {
+    padding: 2rem;
+}
+
+.disp-menu-2 ul li {
+    padding: 25px 0  24px;
+    list-style: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.disp-menu-2 ul li:first-child {
+    border-top: 1px solid var(--border) ;
+}
+
+.disp-menu-2 a {
+    color: var(--dark);
+}
+
+/* end of disappearing-nav */
+
+.hide {
+    display: none;
 }

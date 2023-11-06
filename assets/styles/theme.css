@@ -6,5 +6,6 @@
     --dark: #000000;
     --fade-dark: #767b88;
     --active-link: #be2c2c;
-    --tw-bg-opacity: #d5d5d5;
+    --tw-bg-opacity: #efefef;
+    --border: hsla(0,0%,9%,.15);
 }
