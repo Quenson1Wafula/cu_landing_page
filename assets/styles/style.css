@@ -271,7 +271,7 @@ button {
 }
 
 section {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .poster img {
@@ -310,7 +310,7 @@ section {
 .get-involved-item  a {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     margin: 1rem;
     color: var(--dark);
@@ -514,4 +514,25 @@ section {
   
   .card4:hover .go-arrow {
     opacity: 1;
+  }
+
+  /* socials */
+  .Socials ul li a {
+    justify-content: space-between;
+  }
+
+  .fa-arrow-trend-up {
+    color: var(--fade-dark);
+  }
+
+  .fa-facebook {
+    color: #1877F2;
+  }
+
+  .fa-youtube {
+    color: #CD201F;
+  }
+
+.fa-brand {
+    margin-right: 20px;
   }
