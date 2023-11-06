@@ -34,8 +34,8 @@ body {
   /* =========== */
 
 .humbuger-btn span {
-  width: 2.5rem;
-  border: 1px solid var(---secondary-color);
+  width: 2rem;
+  border: 1px solid var(--dark);
   border-radius: 4rem;
   transition: 0.4s;
 }
@@ -43,7 +43,7 @@ body {
 .nav-header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 2rem;
+  padding: 1rem;
   gap: 7rem;
 }
 .church-logo{
@@ -52,8 +52,51 @@ body {
 
 .plasmic-tab {
     display: flex;
-    justify-content: space-between;
     list-style: none;
-    border: 1px solid #000;
     text-align: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-shrink: 0;
+    padding: 8px;
 }
+.plasmic-tab li a {
+    color: var(--fade-dark);
+}
+
+.disapper-nav {
+    display: none;
+}
+
+.plasmic-tab li a:hover {
+    color: var(--dark);
+}
+
+.plasmic-tab li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 12px;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.show-nav {
+    display: block;
+  }
