@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+  background-color: var(--body-bg);
 }
 
 /* header nav section */
@@ -536,3 +536,47 @@ section {
 .fa-brand {
     margin-right: 20px;
   }
+
+  /* foooter starts here */
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 1rem;
+    /* padding: 2rem; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container {
+    padding: 2rem;
+    border-top: 1px solid #a4a7ac;
+    background-color: #fff;
+    margin-top: 2rem;
+  }
+
+  .footer-links .header {
+    color: var(--fade-dark);
+  }
+
+  .footer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--fade-dark);
+    font-size: 12px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .socials a{
+    color: var(--dark);
+  }
+  /* footer ends here */
