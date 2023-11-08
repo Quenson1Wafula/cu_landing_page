@@ -603,12 +603,16 @@ section {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    border: 2px solid red;
     gap: 2rem;
     align-items: center;
   }
 
   .menu-items li a {
+    color: var(--fade-dark);
+    font-size: 1rem;
+  }
+
+  .menu-items li a:hover {
     color: var(--dark);
   }
 
@@ -627,5 +631,13 @@ section {
   nav {
     max-height: 4.5rem;
     padding: 0 16px 0 32px;
+  }
+
+  .active {
+    border-bottom: 2px solid var(--active-link);
+  }
+
+ .active a {
+    color: var(--active-link) !important;
   }
 }
