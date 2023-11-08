@@ -633,11 +633,8 @@ section {
     padding: 0 16px 0 32px;
   }
 
-  .active {
-    border-bottom: 2px solid var(--active-link);
-  }
 
- .active a {
+ .active-link a {
     color: var(--active-link) !important;
   }
 }
