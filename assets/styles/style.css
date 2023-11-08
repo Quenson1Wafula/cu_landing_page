@@ -1,4 +1,6 @@
-@import url(./theme.css);
+@import url('./theme.css');
+@import url('./animation.css');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--body-bg);
+  scroll-behavior: smooth;
 }
 
 /* header nav section */
@@ -16,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  cursor: pointer;
 }
 
 .dis-main-menu .fa-x {
@@ -39,9 +43,6 @@ body {
   transform: rotate(45deg) translate(-10px, -6px);
 }
 
-.show {
-  display: block;
-}
 /* =========== */
 
 .humbuger-btn span {
@@ -547,6 +548,7 @@ section {
   margin-right: 20px;
 }
 
+
 /* foooter starts here */
 .footer-links {
   display: grid;
@@ -589,6 +591,19 @@ section {
 .socials a {
   color: var(--dark);
 }
+
+.overlay {
+  display: none;
+  background-color: var(--body-bg);
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+}
+
+.show {
+  display: block;
+}
 /* footer ends here */
 
 /* desktop version starts here */
@@ -629,6 +644,7 @@ section {
 
   .logo img {
     width: 3rem;
+    cursor: pointer;
   }
   .nav-header {
     justify-content: none;
@@ -645,12 +661,12 @@ section {
   }
 
   .overlay {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
+    
   }
 
   .disapper-nav {
@@ -673,5 +689,7 @@ section {
     margin: 1rem;
     font-size: 1.5rem;
     color: var(--dark);
+    cursor: pointer;
   }
+  
 }
