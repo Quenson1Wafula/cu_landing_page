@@ -18,6 +18,10 @@ body {
   gap: 0.6rem;
 }
 
+.dis-main-menu .fa-x {
+  display: none;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -35,6 +39,9 @@ body {
   transform: rotate(45deg) translate(-10px, -6px);
 }
 
+.show {
+  display: block;
+}
 /* =========== */
 
 .humbuger-btn span {
@@ -653,5 +660,18 @@ section {
     background: var(--body-bg);
     width: 50%;
     height: 100vh;
+  }
+
+  .dis-main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dis-main-menu .fa-x {
+    display: block;
+    float: right;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: var(--dark);
   }
 }
