@@ -21,6 +21,12 @@ const execPhotos = [
 
 const missions = [
     {
+
+    }
+]
+
+const ministries = [
+    {
         
     }
 ]
