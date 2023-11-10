@@ -1,5 +1,6 @@
 @import url('./theme.css');
 @import url('./animation.css');
+@import url('./slider.css');
 
 * {
   padding: 0;
