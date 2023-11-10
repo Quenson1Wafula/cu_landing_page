@@ -1,3 +1,47 @@
+// importing my js module
+import { sliderAssets } from './jsonStore.js';
+
+// dynamically create slider images
+const slideshowContainer = document.querySelector(".slideshow-container");
+const dotContainer = document.querySelector('.dot-container');
+
+sliderAssets.forEach((asset, index) => {
+  // Create a new slide element
+  const slide = document.createElement("div");
+  slide.classList.add("mySlides", "fade");
+
+  // Create the number text element
+  const numbertext = document.createElement("div");
+  numbertext.classList.add("numbertext");
+  numbertext.textContent = `${index + 1} / ${sliderAssets.length}`;
+
+  // Create the image element
+  const img = document.createElement("img");
+  img.src = asset.image;
+  img.style.width = "100%";
+
+  // Create the text element
+  const text = document.createElement("div");
+  text.classList.add("text");
+  text.textContent = asset.caption;
+
+  // Append elements to the slide
+  slide.appendChild(numbertext);
+  slide.appendChild(img);
+  slide.appendChild(text);
+
+  // Append the slide to the slideshow container
+  slideshowContainer.appendChild(slide);
+});
+
+// dynamically generate the dots according to the number of images
+for (let i = 0; i < sliderAssets.length; i++) {
+  const dot = document.createElement('span');
+  dot.classList.add('dot');
+  dotContainer.appendChild(dot);
+}
+
+// slider animation
 let slideIndex = 0;
 showSlides();
 

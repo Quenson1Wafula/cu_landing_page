@@ -1,25 +1,25 @@
 const sliderAssets = [
   {
     id: 1,
-    image: "././images/gallery/cover_photo.jpg",
+    image: "../assets/images/gallery/cover_photo.jpg",
     caption: "Heavenly Atmosphere Captured",
     alternative: "TTCU",
   },
   {
     id: 2,
-    image: "././images/gallery/congregation.JPG",
+    image: "../assets/images/gallery/congregation.JPG",
     caption: "Our Hearts Ablaze for Christ",
     alternative: "TTCU congregetion",
   },
   {
     id: 3,
-    image: "././images/gallery/old1.JPG",
+    image: "../assets/images/gallery/old1.JPG",
     caption: "Spiritual Elegance Captured",
     alternative: "TTCU old fellowship",
   },
   {
     id: 4,
-    image: "././images/gallery/old2.JPG",
+    image: "../assets/images/gallery/old2.JPG",
     caption: "Faithful Congregation Gathering",
   },
 ];
@@ -96,3 +96,4 @@ const ministries = [
 
 const currentExec = [
 ]
+export { sliderAssets, hikePhotos, execPhotos, missions, ministries, currentExec };

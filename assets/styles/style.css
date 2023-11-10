@@ -27,6 +27,11 @@ body {
   display: none;
 }
 
+/* hide desktop hero on mobile */
+.slideshow-container, .dot-container {
+  display: none;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -607,6 +612,7 @@ section {
 }
 /* footer ends here */
 
+
 /* desktop version starts here */
 @media (min-width: 768px) {
   .nav-header {
@@ -693,4 +699,14 @@ section {
     cursor: pointer;
   }
   
+  /* desktop hero section starts here */
+  .latest-sermon {
+    display: none;
+  }
+
+  .slideshow-container, .dot-container {
+    display: block;
+  }
+  /* desktop hero section ends here */
 }
+
