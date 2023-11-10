@@ -55,8 +55,44 @@ const hikePhotos = [
   },
 ];
 
-const execPhotos = [{}];
+const execPhotos = [
+  {
+    id: 1,
+    image: "././images/gallery/exec1",
+  },
+  {
+    id: 2,
+    image: "././images/gallery/exec2",
+  },
+  {
+    id: 3,
+    image: "././images/gallery/exec3",
+  },
+  {
+    id: 4,
+    image: "././images/gallery/exec4",
+  },
+  {
+    id: 5,
+    image: "././images/gallery/exec5",
+  },
+];
 
-const missions = [{}];
+const missions = [
+  {
+    id: 1,
+    image: "././images/gallery/mission1",
+    mission: "Kaloleni Mission",
+  },
+];
 
-const ministries = [{}];
+const ministries = [
+  {
+    id: 1,
+    image: "././images/gallery/music-maroon.jpg",
+  },
+  {},
+];
+
+const currentExec = [
+]
