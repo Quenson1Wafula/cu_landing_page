@@ -14,10 +14,10 @@
 }
 
 .slideshow-container img {
-border-radius: 8px;
-width: 100%;
-height: 100%;
-object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Caption text */
@@ -80,6 +80,47 @@ object-fit: cover;
   z-index: 1; /* Adjust z-index to position it behind the text */
 }
 
+/* video player */
+.video-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  max-width: 1000px;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  display: none;
+}
+
+#videoPlayer {
+  width: 100%;
+  height: auto; /* Adjust this based on your design */
+  position: relative;
+  z-index: 1;
+}
+
+.video-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(61, 85, 164);
+  background: linear-gradient(
+    0deg,
+    rgba(61, 85, 164, 0.5844712885154062) 0%,
+    rgba(120, 161, 212, 0.5144432773109244) 2%,
+    rgba(120, 161, 212, 0.6516981792717087) 100%
+  );
+  z-index: 2;
+}
+
+/* video player ends here */
 @keyframes fade {
   from {
     opacity: 0.4;
