@@ -1,9 +1,9 @@
 // importing my js module
-import { sliderAssets } from './jsonStore.js';
+import { sliderAssets } from "./jsonStore.js";
 
 // dynamically create slider images
 const slideshowContainer = document.querySelector(".slideshow-container");
-const dotContainer = document.querySelector('.dot-container');
+const dotContainer = document.querySelector(".dot-container");
 
 sliderAssets.forEach((asset, index) => {
   // Create a new slide element
@@ -25,9 +25,14 @@ sliderAssets.forEach((asset, index) => {
   text.classList.add("text");
   text.textContent = asset.caption;
 
+  // Create a div for the background gradient
+  const gradientLayer = document.createElement("div");
+  gradientLayer.classList.add("gradient-layer");
+
   // Append elements to the slide
   slide.appendChild(numbertext);
   slide.appendChild(img);
+  slide.appendChild(gradientLayer);
   slide.appendChild(text);
 
   // Append the slide to the slideshow container
@@ -36,8 +41,8 @@ sliderAssets.forEach((asset, index) => {
 
 // dynamically generate the dots according to the number of images
 for (let i = 0; i < sliderAssets.length; i++) {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
   dotContainer.appendChild(dot);
 }
 
@@ -50,14 +55,16 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
