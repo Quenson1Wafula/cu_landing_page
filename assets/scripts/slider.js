@@ -76,7 +76,6 @@ let isHovered = false;
 desktopHeroContainer.addEventListener('mouseenter', () => {
   if (!isHovered) {
     // Show the video and hide the slider when hovering
-    console.log('hovered');
     videoPlayer.classList.add('show');
     heroSilder.classList.add('hide');
     isHovered = true;
@@ -85,7 +84,6 @@ desktopHeroContainer.addEventListener('mouseenter', () => {
 
 desktopHeroContainer.addEventListener('mouseleave', () => {
   if (isHovered) {
-    console.log('not hovered');
     // Hide the video and show the slider when the mouse leaves
     videoPlayer.classList.remove('show');
     heroSilder.classList.remove('hide');
