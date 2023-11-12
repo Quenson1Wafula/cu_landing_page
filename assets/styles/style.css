@@ -628,6 +628,11 @@ section {
     display: none;
   }
 
+  .hero-content {
+    z-index: 9;
+    width: 40%;
+  }
+
   .menu-items {
     display: flex;
     list-style: none;
