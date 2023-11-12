@@ -63,22 +63,24 @@ function showSlides() {
     slideIndex = 1;
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active-ball", "");
   }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " active-ball";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
 // handle video apper on hover
 slideshowContainer.addEventListener('mouseover', () => {
   // Show the video and hide the slider when hovering
-  videoPlayer.style.display = 'block';
-  heroSilder.style.display = 'none';
+  videoPlayer.classList.add('show');
+  heroSilder.classList.add('hide');
+  isHovered = true;
 });
 
 slideshowContainer.addEventListener('mouseout', () => {
   // Hide the video and show the slider when mouse leaves
-  videoPlayer.style.display = 'none';
-  heroSilder.style.display = 'block';
+  videoPlayer.classList.remove('show');
+  heroSilder.classList.remove('hide');
+  isHovered = false;
 });
