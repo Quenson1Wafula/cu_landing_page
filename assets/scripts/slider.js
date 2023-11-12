@@ -4,7 +4,8 @@ import { sliderAssets } from "./jsonStore.js";
 // dynamically create slider images
 const slideshowContainer = document.querySelector(".slideshow-container");
 const dotContainer = document.querySelector(".dot-container");
-
+const heroSilder = document.querySelector(".slider");
+const videoPlayer =document.querySelector(".video-overlay");
 sliderAssets.forEach((asset, index) => {
   // Create a new slide element
   const slide = document.createElement("div");
@@ -68,3 +69,16 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+// handle video apper on hover
+slideshowContainer.addEventListener('mouseover', () => {
+  // Show the video and hide the slider when hovering
+  videoPlayer.style.display = 'block';
+  heroSilder.style.display = 'none';
+});
+
+slideshowContainer.addEventListener('mouseout', () => {
+  // Hide the video and show the slider when mouse leaves
+  videoPlayer.style.display = 'none';
+  heroSilder.style.display = 'block';
+});

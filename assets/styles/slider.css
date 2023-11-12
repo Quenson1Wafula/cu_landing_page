@@ -93,7 +93,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  /* display: none; */
+  display: none;
 }
 
 #videoPlayer {
