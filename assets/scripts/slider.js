@@ -2,6 +2,7 @@
 import { sliderAssets } from "./jsonStore.js";
 
 // dynamically create slider images
+const desktopHeroContainer = document.querySelector(".hero-container");
 const slideshowContainer = document.querySelector(".slideshow-container");
 const dotContainer = document.querySelector(".dot-container");
 const heroSilder = document.querySelector(".slider");
@@ -69,18 +70,25 @@ function showSlides() {
   dots[slideIndex - 1].className += " active-ball";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+let isHovered = false;
 
 // handle video apper on hover
-slideshowContainer.addEventListener('mouseover', () => {
-  // Show the video and hide the slider when hovering
-  videoPlayer.classList.add('show');
-  heroSilder.classList.add('hide');
-  isHovered = true;
+desktopHeroContainer.addEventListener('mouseenter', () => {
+  if (!isHovered) {
+    // Show the video and hide the slider when hovering
+    console.log('hovered');
+    videoPlayer.classList.add('show');
+    heroSilder.classList.add('hide');
+    isHovered = true;
+  }
 });
 
-slideshowContainer.addEventListener('mouseout', () => {
-  // Hide the video and show the slider when mouse leaves
-  videoPlayer.classList.remove('show');
-  heroSilder.classList.remove('hide');
-  isHovered = false;
+desktopHeroContainer.addEventListener('mouseleave', () => {
+  if (isHovered) {
+    console.log('not hovered');
+    // Hide the video and show the slider when the mouse leaves
+    videoPlayer.classList.remove('show');
+    heroSilder.classList.remove('hide');
+    isHovered = false;
+  }
 });

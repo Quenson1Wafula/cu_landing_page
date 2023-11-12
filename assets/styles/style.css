@@ -712,6 +712,15 @@ section {
   .slideshow-container, .dot-container {
     display: block;
   }
+
+  .main-body {
+    padding:2rem 10rem;
+  }
+
+  .hero-container {
+    margin: auto;
+    justify-content: center;
+  }
   /* desktop hero section ends here */
 }
 
