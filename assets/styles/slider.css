@@ -136,4 +136,8 @@
   .text {
     font-size: 11px;
   }
+
+  .video-overlay {
+    display: none;
+  }
 }
