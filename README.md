@@ -22,7 +22,11 @@ Here's the table with the assigned tasks:
    ```ruby
    cd cu_landing_page
    ```
-3. Install Visual Studio Live server extension. [Download here 👈](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-4. Click on Go Live.
+3. Get the latest branch changes.
+   ```ruby
+   git pull
+   ```
+4. Install Visual Studio Live server extension. [Download here 👈](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+5. Click on Go Live.
   4.1 This will open the `index.html` file on the default browser.
    Navigate and familiarize yourself.
