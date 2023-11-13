@@ -610,6 +610,10 @@ section {
 .show {
   display: block;
 }
+
+button {
+  cursor: pointer;
+}
 /* footer ends here */
 
 
