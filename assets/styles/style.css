@@ -726,6 +726,11 @@ button {
     margin: auto;
     justify-content: center;
   }
+
+  .echo {
+    display: grid;
+    
+  }
   /* desktop hero section ends here */
 }
 
