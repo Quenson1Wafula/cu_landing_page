@@ -257,6 +257,10 @@ button {
   margin: 4px 0px 6px;
 }
 
+section {
+  padding: 1rem;
+}
+
 .btns {
   display: flex;
   flex-direction: column;
