@@ -9,4 +9,6 @@
     --tw-bg-opacity: #efefef;
     --border: hsla(0,0%,9%,.15);
     --body-bg:#f6f6f6;
+    --active: #ff661e;
+    --active-fade: #ff651e46;
 }
