@@ -21,6 +21,8 @@ sliderAssets.forEach((asset, index) => {
   const img = document.createElement("img");
   img.src = asset.image;
   img.style.width = "100%";
+  img.style.height = "80vh";
+  img.style.borderRadius = "8px";
 
   // Create the text element
   const text = document.createElement("div");
