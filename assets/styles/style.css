@@ -727,9 +727,14 @@ button {
     justify-content: center;
   }
 
+  .btns {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
   .echo {
     display: grid;
-    
+
   }
   /* desktop hero section ends here */
 }

@@ -90,7 +90,7 @@
   justify-content: center;
   position: relative;
   display: none;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 #videoPlayer {
@@ -117,8 +117,11 @@
   z-index: 2;
 }
 
-.slider {
-  /* height: 90vh; */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  overflow: hidden;
 }
 
 /* video player ends here */
