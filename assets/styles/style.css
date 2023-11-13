@@ -1,6 +1,6 @@
-@import url('./theme.css');
-@import url('./animation.css');
-@import url('./slider.css');
+@import url("./theme.css");
+@import url("./animation.css");
+@import url("./slider.css");
 
 * {
   padding: 0;
@@ -28,7 +28,8 @@ body {
 }
 
 /* hide desktop hero on mobile */
-.slideshow-container, .dot-container {
+.slideshow-container,
+.dot-container {
   display: none;
 }
 
@@ -554,7 +555,6 @@ section {
   margin-right: 20px;
 }
 
-
 /* foooter starts here */
 .footer-links {
   display: grid;
@@ -617,7 +617,6 @@ button {
 
 /* footer ends here */
 
-
 /* desktop version starts here */
 @media (min-width: 768px) {
   .nav-header {
@@ -636,6 +635,10 @@ button {
   .hero-content {
     z-index: 9;
     width: 40%;
+  }
+
+  .btns > * {
+    font-weight: 800;
   }
 
   .menu-items {
@@ -683,7 +686,6 @@ button {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
-    
   }
 
   .disapper-nav {
@@ -708,18 +710,19 @@ button {
     color: var(--dark);
     cursor: pointer;
   }
-  
+
   /* desktop hero section starts here */
   .latest-sermon {
     display: none;
   }
 
-  .slideshow-container, .dot-container {
+  .slideshow-container,
+  .dot-container {
     display: block;
   }
 
   .main-body {
-    padding:2rem 10rem;
+    padding: 2rem 10rem;
   }
 
   .hero-container {
@@ -732,10 +735,51 @@ button {
     gap: 1rem;
   }
 
-  .echo {
-    display: grid;
-
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 83vh;
+    overflow: hidden;
+    margin-bottom: 2rem;
   }
+
+  .echo {
+    display: flex;
+    flex-direction: row;
+    /* flex-shrink: 1; */
+    /* flex-wrap: wrap; */
+    align-self: stretch;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .events {
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    margin-top: calc(0px - 16px);
+    height: calc(100% + 16px);
+    border: 2px solid red;
+  }
+
+  .sub-body {
+    width: 35%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container {
+    border: 2px solid red;
+    /* width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+
   /* desktop hero section ends here */
 }
-
