@@ -33,18 +33,22 @@ Here's the table with the assigned tasks:
 ## Instruction B to get Started.
 1. Click this link to download the zip file [Click Me 👈](https://github.com/TTU-CU-Dev/cu_landing_page/archive/refs/heads/pre-dev.zip).
 2. Extract the zip file named `cu_landing_page-pre-dev`.
-3. Open folder in vs code.
+3. Open the folder in vs code.
    3.1 Alternatively you can open git in this directory then type
    ```ruby
    code .
    ```
 4. Open termianl in the directory `cu_landing_page-pre-dev`
-5. pull the changes
+5. Add remote origin.
+   ```ruby
+   git remote add origin https://github.com/TTU-CU-Dev/cu_landing_page.git
+   ``` 
+6. pull the changes
    ```ruby
    git pull
    ```
-6. checkout to the default branch
+7. checkout to the default branch
    ```ruby
    git branch pre-dev
    ```
-7. Thats it.
+8. Thats it.
