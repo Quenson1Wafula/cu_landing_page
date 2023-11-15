@@ -12,7 +12,7 @@ Here's the table with the assigned tasks:
 | --- | --------- | --------------------------------------------------------------- |
 | No tasks assigned yet   |
 
-## Instructions to get started.
+## Instructions A to get started.
 1. Clone the repository
    ```ruby
    cd Documents
@@ -30,3 +30,21 @@ Here's the table with the assigned tasks:
 5. Click on Go Live.
   4.1 This will open the `index.html` file on the default browser.
    Navigate and familiarize yourself.
+## Instruction B to get Started.
+1. Click this link to download the zip file [Click Me 👈](https://github.com/TTU-CU-Dev/cu_landing_page/archive/refs/heads/pre-dev.zip).
+2. Extract the zip file named `cu_landing_page-pre-dev`.
+3. Open folder in vs code.
+   3.1 Alternatively you can open git in this directory then type
+   ```ruby
+   code .
+   ```
+4. Open termianl in the directory `cu_landing_page-pre-dev`
+5. pull the changes
+   ```ruby
+   git pull
+   ```
+6. checkout to the default branch
+   ```ruby
+   git branch pre-dev
+   ```
+7. Thats it.
