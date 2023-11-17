@@ -31,7 +31,18 @@ Here's the table with the assigned tasks:
    ```ruby
    git pull
    ```
-4. Install Visual Studio Live server extension. [Download here 👈](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-5. Click on Go Live.
-  4.1 This will open the `index.html` file on the default browser.
-   Navigate and familiarize yourself.
+4. 3. Create your own branch `e.g When given the task to create a blog section your branch is called blog`.
+   ```ruby
+   git checkout -b "blog"
+   ```
+   
+   **🔴REMEMBER TO GIT THE BRANCH NAME ACCORDING TO THE TAKS. NEVER LEAVE SPACE WHEN GIVING BRANCH NAMES🔴**
+4. Open Visual Studio Code
+   ```ruby
+   code .
+   ```
+5. Complete the task assigned. Make regular git commits.
+6. Install Visual Studio Live server extension. [Download here 👈](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+7. Click on Go Live.
+8. On the page opened in the browser add `/about.html` when working with aboutpage. Replace it with the exact name of your file.
+
