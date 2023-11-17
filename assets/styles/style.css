@@ -89,6 +89,8 @@ body {
 .disapper-nav {
   display: none;
   align-items: center;
+  height: 100vh;
+  overflow: auto;
 }
 
 .plasmic-tab li a:hover {
@@ -705,6 +707,7 @@ button {
     background: var(--body-bg);
     width: 50%;
     height: 100vh;
+    overflow: auto;
   }
 
   .dis-main-menu {
