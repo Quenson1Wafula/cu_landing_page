@@ -705,6 +705,7 @@ button {
     background: var(--body-bg);
     width: 50%;
     height: 100vh;
+    overflow: auto;
   }
 
   .dis-main-menu {
