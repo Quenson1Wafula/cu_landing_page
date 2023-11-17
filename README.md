@@ -10,9 +10,14 @@ Here's the table with the assigned tasks:
 
 | #   | Name      | Task                                                           |
 | --- | --------- | --------------------------------------------------------------- |
-| No tasks assigned yet   |
+| 1  | Thomsen| [Task 1](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44968041)|
+| 2  | Collins Wachira|[Taks 2](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44722425)|
+| 3  | Kirui |[Task 3](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44722347)|
+| 4  | Sam |[Task 4](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44722327)|
+| 5  | Grace | [Task 5](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44722285)|
+| 6  | Bahati | [Taks 6](https://github.com/orgs/TTU-CU-Dev/projects/3?pane=issue&itemId=44722285)|
 
-## Instructions A to get started.
+## Instructions to get started.
 1. Clone the repository
    ```ruby
    cd Documents
@@ -30,25 +35,3 @@ Here's the table with the assigned tasks:
 5. Click on Go Live.
   4.1 This will open the `index.html` file on the default browser.
    Navigate and familiarize yourself.
-## Instruction B to get Started.
-1. Click this link to download the zip file [Click Me 👈](https://github.com/TTU-CU-Dev/cu_landing_page/archive/refs/heads/pre-dev.zip).
-2. Extract the zip file named `cu_landing_page-pre-dev`.
-3. Open the folder in vs code.
-   3.1 Alternatively you can open git in this directory then type
-   ```ruby
-   code .
-   ```
-4. Open termianl in the directory `cu_landing_page-pre-dev`
-5. Add remote origin.
-   ```ruby
-   git remote add origin https://github.com/TTU-CU-Dev/cu_landing_page.git
-   ``` 
-6. pull the changes
-   ```ruby
-   git pull
-   ```
-7. checkout to the default branch
-   ```ruby
-   git branch pre-dev
-   ```
-8. Thats it.
