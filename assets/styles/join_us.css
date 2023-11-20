@@ -1,0 +1,73 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-image: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.row{
+        display: flex;
+        height: 50%;
+        align-items: center;
+        margin-top: 20%;
+}
+.col{
+    flex-basis: 50%;
+}
+.h1{
+    color: #fff;
+    font-size: 100px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    background-image: url(church.png);
+}
+.card1{
+    background-image: url(church.png);
+}
+.card2{
+    background-image: url(church.png);
+}
+.card3{
+    background-image: url(church.png);
+}
+.card4{
+    background-image: url(church.png);
+}
+.card5{
+    background-image: url(church.png);
+}
+.card6{
+    background-image: url(church.png);
+}
+.card7{
+    background-image: url(church.png);
+}
+.card8{
+    background-image: url(church.png);
+}
+.card9{
+    background-image: url(../images/church.png);
+    background-repeat: no-repeat;
+}
+.card10{
+    background-image: url(church.png);
+}
