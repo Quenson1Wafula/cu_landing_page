@@ -1,24 +1,30 @@
+body {
+    background-color: rgba(0, 0, 0, 0.654);
+    translate: all 0.3s ease-in-out;
+}
 .content {
-    width: 330px;
+    width: 60%;
     padding: 40px 30px;
-    background: #dde1e7;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: -3px -3px 7px #ffffff73,
-                 2px 2px 5px rgba(94,104,121,0.288);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .content .text {
-    font-size: 33px;
-    font-weight: 600;
     margin-bottom: 35px;
-    color: #595959;
+    text-align: center;
   }
   
   .field {
-    height: 50px;
+    height: 3rem;
     width: 100%;
     display: flex;
     position: relative;
+    align-items: center;
   }
   
   .field:nth-child(2) {
@@ -28,11 +34,11 @@
   .field .input {
     height: 100%;
     width: 100%;
-    padding-left: 45px;
+    padding-left: 1.25rem;
     outline: none;
     border: none;
-    font-size: 18px;
-    background: #dde1e7;
+    font-size: 1.3em;
+    background: #ffffff;
     color: #595959;
     border-radius: 25px;
     box-shadow: inset 2px 2px 5px #BABECC,
@@ -47,15 +53,18 @@
   .field .span {
     position: absolute;
     color: #595959;
-    width: 50px;
-    line-height: 55px;
+    width: 3.13rem;
+    line-height: 3.2rem;
+    /* padding-left: 0.5rem; */
+    text-align: center;
+
   }
   
   .field .label {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 45px;
+    left: 2.8rem;
     pointer-events: none;
     color: #666666;
   }
@@ -64,20 +73,6 @@
     opacity: 0;
   }
   
-  .forgot-pass {
-    text-align: left;
-    margin: 10px 0 10px 5px;
-  }
-  
-  .forgot-pass a {
-    font-size: 16px;
-    color: #666666;
-    text-decoration: none;
-  }
-  
-  .forgot-pass:hover a {
-    text-decoration: underline;
-  }
   
   .button {
     margin: 15px 0;
@@ -86,7 +81,7 @@
     font-size: 18px;
     line-height: 50px;
     font-weight: 600;
-    background: #dde1e7;
+    background: #ffffff;
     border-radius: 25px;
     border: none;
     outline: none;
@@ -102,17 +97,6 @@
                inset -5px -5px 10px #ffffff73;
   }
   
-  .sign-up {
-    margin: 10px 0;
-    color: #595959;
-    font-size: 16px;
-  }
-  
-  .sign-up a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  .sign-up a:hover {
-    text-decoration: underline;
-  }
+.m-pesa-logo img {
+    width: 50%;
+}
