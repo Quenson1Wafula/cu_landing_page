@@ -1,7 +1,6 @@
 @import url(./theme.css);
 body {
   background-color: rgba(0, 0, 0, 0.654);
-  translate: all 0.3s ease-in-out;
 }
 .content {
   width: 60%;
@@ -13,6 +12,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: zoomIn 0.8s ease-out;
 }
 
 .content .text {
@@ -101,3 +101,19 @@ body {
         width: 20%;
     }
 }
+
+/* modal */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.4);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
