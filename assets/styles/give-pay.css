@@ -1,8 +1,15 @@
 @import url(./theme.css);
-body {
-  background-color: rgba(0, 0, 0, 0.654);
+.modal {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+  z-index: 1919191919191;
 }
-.content {
+.modal .content {
   width: 60%;
   padding: 40px 30px;
   background-color: rgb(255, 255, 255);
@@ -15,12 +22,12 @@ body {
   animation: zoomIn 0.8s ease-out;
 }
 
-.content .text {
+.modal .content .text {
   margin-bottom: 35px;
   text-align: center;
 }
 
-.field {
+.modal .field {
   height: 3rem;
   width: 100%;
   display: flex;
@@ -28,11 +35,11 @@ body {
   align-items: center;
 }
 
-.field:nth-child(2) {
+.modal .field:nth-child(2) {
   margin-top: 20px;
 }
 
-.field .input {
+.modal .field .input {
   height: 100%;
   width: 100%;
   padding-left: 3rem;
@@ -45,11 +52,11 @@ body {
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
 }
 
-.field .input:focus {
+.modal .field .input:focus {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff73;
 }
 
-.field .span {
+.modal .field .span {
   position: absolute;
   color: #595959;
   width: 3.13rem;
@@ -58,7 +65,7 @@ body {
   text-align: center;
 }
 
-.field .label {
+.modal .field .label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -67,13 +74,13 @@ body {
   color: #666666;
 }
 
-.field .input:valid ~ label {
+.modal .field .input:valid ~ label {
   opacity: 0;
 }
 
-.button {
-  margin: 15px 0;
-  width: 100%;
+.modal .button {
+  margin: 1.2rem 0;
+  width: 50%;
   height: 50px;
   font-size: 1.2em;
   line-height: 50px;
@@ -84,10 +91,9 @@ body {
   outline: none;
   cursor: pointer;
   color: #ffffff;
-  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
 }
 
-.button:focus {
+.modal .button:focus {
   color: #3498db;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
 }
@@ -96,24 +102,27 @@ body {
   width: 50%;
 }
 
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 768px) {
-    .content {
-        width: 20%;
-    }
+  .modal .content {
+    width: 20%;
+  }
 }
 
 /* modal */
 @keyframes zoomIn {
-    0% {
-        transform: scale(0.4);
-    }
+  0% {
+    transform: scale(0.4);
+  }
 
-    50% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
-

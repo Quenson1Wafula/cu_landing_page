@@ -1,6 +1,7 @@
 @import url("./theme.css");
 @import url("./animation.css");
 @import url("./slider.css");
+@import url("./give-pay.css");
 
 * {
   padding: 0;
