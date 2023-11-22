@@ -1,13 +1,45 @@
 @import url(./theme.css);
-.modal {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  border: 2px solid red;
-  position: relative;
-  z-index: 1919191919191;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 9999; /* Display on top of other elements */
+  display: none;
+}
+
+/* Pseudo-elements for the glassy effect */
+.modal-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(10px); /* Adjust the blur effect as needed */
+}
+
+/* Style the modal */
+.modal {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 80%;
 }
 .modal .content {
   width: 60%;
