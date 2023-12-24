@@ -1,0 +1,32 @@
+@import url(./style.css);
+@import url(./theme.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.page-container {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.leadership-item img {
+    width: 15rem;
+    aspect-ratio: auto 500 / 500;
+    height: 15rem;
+    border-radius: 60%;
+    margin: 1rem 0;
+}
+
+.l-title p {
+    color: var(--fade-dark);
+    text-decoration: ivory;
+}
