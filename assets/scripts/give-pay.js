@@ -1,30 +1,21 @@
 const payBtn = document.querySelector("#pay-btn");
 const giveForm = document.getElementById("give-form");
-const headers = {
-    'Content-Type': 'application/json',
-    'Apikey': `QEUwQqdYREw`
-};
 
 const initiatePay = (phone, amount) => {
-    axios
-    .post("https://tinypesa.com/api/v1/express/initialize", {
-        amount: amount,
-        msisdn: phone,
-    }, { headers: headers })
-    .then((res) => {
-        console.log(res.data);
-        if (res.data.status === "success") {
-            window.location.href = res.data.data.authorization_url;
-        }
-    })
-    .catch((error) => {
-        console.error("Error initiating payment:", error);
-    });
-}
+  var url = " https://tinypesa.com/api/v1/express/initialize";
 
+  fetch(url, {
+    body: `amount=${amount}&msisdn=${phone}hu`,
+    headers: {
+      Apikey: "erwyuweoyf",
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    method: "POST",
+  });
+};
 giveForm.onsubmit = function (e) {
-    e.preventDefault();
-    const phone = document.querySelector(".phone-number").value;
-    const amount = document.querySelector(".amount").value;
-    initiatePay(phone, amount);
+  e.preventDefault();
+  const phone = document.querySelector(".phone-number").value;
+  const amount = document.querySelector(".amount").value;
+  initiatePay(phone, amount);
 };
