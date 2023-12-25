@@ -19,9 +19,9 @@
 }
 
 .leadership-item img {
-    width: 15rem;
+    width: 20rem;
     aspect-ratio: auto 500 / 500;
-    height: 15rem;
+    height: 20rem;
     border-radius: 60%;
     margin: 1rem 0;
 }
@@ -29,4 +29,12 @@
 .l-title p {
     color: var(--fade-dark);
     text-decoration: ivory;
+}
+
+.patron-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.25rem;
 }
