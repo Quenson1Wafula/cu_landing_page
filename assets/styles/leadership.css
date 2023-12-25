@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 0.3rem;
     color: var(--active-link);
 
 }
@@ -65,4 +65,50 @@
 
 .readmore {
     width: 100%;
+}
+
+.leaders-heading .readmore {
+    display: none;
+
+}
+
+@media (min-width: 768px) {
+    .leaders-heading .readmore {
+        display: block;
+    }
+    .page-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-body {
+        padding: 2rem 7rem;
+    }
+
+    .leadership-item {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .leader-content {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .leaders-heading {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .readmore {
+        width: 120%;
+        display: none;
+    }
 }
