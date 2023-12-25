@@ -99,7 +99,6 @@
     }
 
     .leaders-heading {
-        border: 2px solid red;
         display: flex;
         flex-direction: row;
         align-items: center;
