@@ -1,0 +1,113 @@
+@import url(./style.css);
+@import url(./theme.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.page-container {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.leadership-item img {
+    width: 20rem;
+    aspect-ratio: auto 500 / 500;
+    height: 20rem;
+    border-radius: 60%;
+    margin: 1rem 0;
+}
+
+.leadership-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.l-title p {
+    color: var(--fade-dark);
+    text-decoration: ivory;
+}
+
+.patron-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+} 
+
+.more-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--active-link);
+
+}
+
+.readmore img{
+        width: 20%;
+        height: 2rem;
+        filter: invert(15%) sepia(65%) saturate(3850%) hue-rotate(351deg) brightness(115%) contrast(80%);
+}
+
+.readmore {
+    width: 100%;
+}
+
+.leaders-heading .readmore {
+    display: none;
+
+}
+
+@media (min-width: 768px) {
+    .leaders-heading .readmore {
+        display: block;
+    }
+    .page-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-body {
+        padding: 2rem 7rem;
+    }
+
+    .leadership-item {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .leader-content {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .leaders-heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .readmore {
+        width: 120%;
+        display: none;
+    }
+}
