@@ -23,7 +23,21 @@
 
 .hero-text {
     color: var(--primary-color);
-    padding-top: 13rem;
+    padding-top: 10rem;
     margin-left: 1.5rem;
-    border: 2px solid rebeccapurple;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.hero-text h3 {
+    text-transform: capitalize;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 2rem;
 }

@@ -49,24 +49,6 @@
     width: 100%;
 } 
 
-.more-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.3rem;
-    color: var(--active-link);
-
-}
-
-.readmore img{
-        width: 20%;
-        height: 2rem;
-        filter: invert(15%) sepia(65%) saturate(3850%) hue-rotate(351deg) brightness(115%) contrast(80%);
-}
-
-.readmore {
-    width: 100%;
-}
 
 .leaders-heading .readmore {
     display: none;
