@@ -12,3 +12,9 @@
     --active: #ff661e;
     --active-fade: #ff651e46;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--body-bg);
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,29 @@
+@import url(./theme.css);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.about-hero-container img {
+    position: relative;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+.about-hero-content {
+    background-image: linear-gradient(to bottom, rgba(107, 104, 104, 0.082), rgba(0, 0, 0, 0.767)), 
+      url('../images/gallery/about-hero.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+.hero-text {
+    color: var(--primary-color);
+    padding-top: 13rem;
+    margin-left: 1.5rem;
+    border: 2px solid rebeccapurple;
+}
