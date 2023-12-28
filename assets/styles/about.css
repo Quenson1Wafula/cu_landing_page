@@ -45,7 +45,8 @@
 
   .hero-text {
     margin-left: 5rem;
-    padding-top: 19rem;
+    padding-top: 14rem;
+    position: absolute;
   }
 
   .hero-text >* {
